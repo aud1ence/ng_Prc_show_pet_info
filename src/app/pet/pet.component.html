@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+  <div class="card col-6">
+    <div class="card-title">
+      <h3>Pet Profile</h3>
+      <h4>Pet name: {{ pet.name }}</h4>
+    </div>
+    <div class="card-body">
+      <img [src]="pet.image" style="width: 50%" alt="">
+    </div>
+    <div class="card-title">
+      <h4>Pet info: {{ pet.info }}</h4>
+    </div>
+  </div>
+    <div class="col-6">
+      <label> Pet name: </label>
+      <input class="form-control" type="text" [(ngModel)]="pet.name">
+      <label> Pet photo: </label>
+      <input class="form-control" type="url" [(ngModel)]="pet.image">
+      <label> Pet info: </label>
+      <input class="form-control" type="text" [(ngModel)]="pet.info">
+    </div>
+  </div>
+</div>
